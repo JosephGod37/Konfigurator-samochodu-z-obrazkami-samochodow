@@ -21,36 +21,37 @@
             android:textAlignment="center"
             android:background="#9E9389"
             />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_margin="40dp"
-            android:layout_gravity="center">
+
             <RadioGroup
                 android:id="@+id/car_radiogroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
                 >
                 <RadioButton
                     android:id="@+id/hatchback_radiobutton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="10dp"
                     android:text="hatchback"
                     />
                 <RadioButton
                     android:id="@+id/sedan_radiobutton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
+                    android:padding="10dp"
                     android:text="sedan"
                     />
                 <RadioButton
                     android:id="@+id/suv_radiobutton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
+                    android:padding="10dp"
                     android:text="suv"
                     />
             </RadioGroup>
@@ -61,8 +62,8 @@
                 android:contentDescription="cars"
                 android:scaleType="centerCrop"
                 android:src="@drawable/hatchback"
+                android:layout_gravity="center"
                 />
-        </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,12 +77,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_margin="20dp">
             <CheckBox
                 android:id="@+id/klimatyzacja"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="klimatyzacja"
                 android:layout_margin="10dp"
                 />
@@ -89,6 +91,7 @@
                 android:id="@+id/skorzane_siedzenia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="skorzane siedzenia"
                 android:layout_margin="10dp"
                 />
@@ -98,7 +101,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="Podsumowanie"
+            android:text="Zloz Zamowienie"
             android:layout_gravity="center"
-            android:backgroundTint="#070707"/>
+            android:backgroundTint="#E60B16"
+            android:textColor="@color/black"/>
     </LinearLayout>
